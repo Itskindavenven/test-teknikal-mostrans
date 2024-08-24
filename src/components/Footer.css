@@ -1,31 +1,26 @@
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-menu {
-    list-style: none;
-    margin: 10px 0 0;
-    padding: 0;
-}
-
-.footer-item {
-    margin: 5px 0;
-}
-
+/* Footer.css */
 .footer-link {
-    color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    text-decoration: underline;
+    color: #dcdcdc; /* Warna link saat hover, sedikit lebih terang */
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer ul .list-inline-item:not(:last-child)::after {
+    content: " | ";
+    color: #dcdcdc; /* Separator antara link */
+    margin-left: 8px;
+    margin-right: 8px;
 }
