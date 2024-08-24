@@ -1,7 +1,7 @@
 import { useQuery, gql } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './CharactersList.css'; // Custom styles
+import './CharactersList.css';
 
 const GET_CHARACTERS = gql`
   query getCharacters($page: Int) {
@@ -46,19 +46,16 @@ const CharactersList = () => {
 
   return (
     <div className="characters-list">
-      {/* Hero Section */}
       <div className="hero-section">
         <h1>Characters List</h1>
         <p className="lead">Explore all the amazing characters from Rick and Morty</p>
       </div>
 
-      {/* Subtitle */}
       <div className="container my-4">
         <h2 className="text-center subtitle">Meet the Characters</h2>
         <p className="text-center">Click on a character to learn more about them.</p>
       </div>
 
-      {/* Characters List */}
       <div className="container">
         <div className="row">
           {data.characters.results.map((character) => (
@@ -83,8 +80,7 @@ const CharactersList = () => {
           ))}
         </div>
 
-        {/* Pagination */}
-        <div className="d-flex justify-content-between mt-4 pagination-controls">
+        <div className="d-flex justify-content-between mt-4 mb-4 pagination-controls">
           <button
             className="btn btn-outline-primary"
             onClick={handlePreviousPage}

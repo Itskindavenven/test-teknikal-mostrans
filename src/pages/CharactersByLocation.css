@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background: linear-gradient(to right, #7b4397, #dc2430);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.container-bawah {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section p.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.location-search {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.location-search input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.location-search input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.character-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.characters-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.characters-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  background: rgba(248, 249, 250, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-not-found {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
